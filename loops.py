@@ -47,3 +47,8 @@ def remove(word, lista):
 
 print(remove("Black", ["Red", "Green", "White", "Black", "Pink", "Yellow", "Black"]))
 print(remove("Gray", ["Red", "Green", "White", "Black", "Pink", "Yellow", "Black"]))
+            return lista
+    return -1
+
+print(remove("Black", ["Red", "Green", "White", "Black", "Pink", "Yellow", "Black"]))
+print(remove("Gray", ["Red", "Green", "White", "Black", "Pink", "Yellow", "Black"]))
