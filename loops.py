@@ -39,11 +39,12 @@ print(put("Blue",["Red", "Green", "Pink","Black"] ))
 
 
 def remove(word, lista):
-    for index, i in enumerate(lista):
-        if word == lista[index]:
+    i = 0
+    for index, item in enumerate(lista):
+        if item == word:
             lista[index] = ""
-            return index
-    return -1
+            i += 1
+    return i
 
 print(remove("Black", ["Red", "Green", "White", "Black", "Pink", "Yellow", "Black"]))
 print(remove("Gray", ["Red", "Green", "White", "Black", "Pink", "Yellow", "Black"]))
