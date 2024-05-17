@@ -14,7 +14,7 @@ def enumerate_backwards(lista):
 	index = 0
 	for string in lista:
 		if string:
-			new_lista.append(f"{index}.{string[::-1]}")
+			new_lista.append(f"{index}. {string[::-1]}")
 			index += 1
 	return new_lista
 print(enumerate_backwards(["Red", "Green", "Blue", "", "Yellow"]))
