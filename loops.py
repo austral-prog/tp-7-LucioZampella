@@ -30,19 +30,19 @@ print(index_of("White", ["Red", "Green", "White", "Black", "Pink", "Yellow", "Bl
 
 def put(word, lista):
     for index, item in enumerate(lista):
-        if item == "":  # Buscar la primera cadena vacía
+        if item == "":
             lista[index] = word
-            return lista
+            return index
     return -1
 print(put("Blue",["Red", "Green", "", "", "Pink", "", "Black"] ))
 print(put("Blue",["Red", "Green", "Pink","Black"] ))
 
 
 def remove(word, lista):
-    for index, item in enumerate(lista):
-        if item == word:
+    for index, i in enumerate(lista):
+        if word == lista[index]:
             lista[index] = ""
-            return lista
+            return index
     return -1
 
 print(remove("Black", ["Red", "Green", "White", "Black", "Pink", "Yellow", "Black"]))
